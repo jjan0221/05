@@ -7,10 +7,20 @@
 	//practice01
 int main(int argc, char *argv[]) 
 {
+	int num = 0;
+	char c;
 	
-	int i;
+	printf("input a string : ");
 	
-	for(i=0; i<10; i++)
-		printf("hello world!\n");
+	while ((c=getchar()) !='\n')
+	{
+		if (c <= '9' && c>= '0')
+		{
+			num++;
+		}
+	}
+	
+	printf("%i\n", num);
+		
 	return 0;
 }
